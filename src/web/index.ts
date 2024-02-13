@@ -16,7 +16,10 @@ const blockTypeProvider:IBlockTypeProvider = {
     title: blockDefinition.metadata.title || blockDefinition.metadata.name,
     validate: DesktopBlockValidation,
     editorComponent: DesktopBlockEditorComponent,
-    definition: blockDefinition
+    definition: blockDefinition,
+    resourceKinds: [
+        'kapeta/resource-type-rest-client',
+    ],
 };
 
 export default blockTypeProvider;
