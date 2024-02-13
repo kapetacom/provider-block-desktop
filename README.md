@@ -1,7 +1,9 @@
 # Desktop Block Provider
+
 Provides desktop block types to the kapeta eco-system.
 
 ---
+
 For details about Kapeta Providers see:
 
 https://github.com/kapetacom/provider-documentation
