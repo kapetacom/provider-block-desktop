@@ -1,0 +1,37 @@
+kind: core/block-type
+metadata:
+  name: kapeta/block-type-desktop
+  title: Desktop
+  description: Provides block type for desktop applications.
+  visibility: public
+spec:
+  icon:
+    type: url
+    value: https://storage.googleapis.com/kapeta-public-cdn/icons/desktop.svg
+
+  dependencies:
+    - path: spec.consumers.kind
+      type: Consumers
+    - path: spec.providers.kind
+      type: Providers
+    - path: spec.target.kind
+      type: Language target
+  schema:
+    type: object
+    properties:
+      icon:
+        $ref: /core/icon-value
+      target:
+        $ref: /core/language-target-reference
+      configuration:
+        $ref: /core/entity-list
+      entities:
+        $ref: /core/entity-list
+      consumers:
+        $ref: /core/block-resource-list
+      providers:
+        $ref: /core/block-resource-list
+    required:
+      - target
+  defaultPort:
+    type: rest
