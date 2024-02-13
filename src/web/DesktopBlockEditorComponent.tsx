@@ -1,5 +1,5 @@
 /**
- * Copyright 2023 Kapeta Inc.
+ * Copyright 2024 Kapeta Inc.
  * SPDX-License-Identifier: MIT
  */
 
@@ -94,7 +94,7 @@ export const DesktopBlockEditorComponent = (props:Props) => {
 
     return (
         <div>
-            <InfoBox>Service block that describes a backend exposing functionality such as APIs</InfoBox>
+            <InfoBox>Desktop blocks describe a desktop application</InfoBox>
             <FormAvatarEditorField
                 name={'spec.icon'}
                 label={'Icon'}
