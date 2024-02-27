@@ -1,4 +1,4 @@
-kind: core/block-type
+kind: core/block-type-executable
 metadata:
   name: kapeta/block-type-desktop
   title: Desktop
@@ -16,6 +16,7 @@ spec:
       type: Providers
     - path: spec.target.kind
       type: Language target
+
   schema:
     type: object
     properties:
@@ -33,5 +34,3 @@ spec:
         $ref: /core/block-resource-list
     required:
       - target
-  defaultPort:
-    type: rest
